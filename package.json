@@ -1,0 +1,27 @@
+{
+  "name": "javascript_utilities",
+  "version": "1.0.0",
+  "description": "Javascript utility functions",
+  "main": "lib/utility.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/_mocha --recursive ./tests/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noxilex/Javascript_Utilities.git"
+  },
+  "author": "Benjamin D'Hoop",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Noxilex/Javascript_Utilities/issues"
+  },
+  "homepage": "https://github.com/Noxilex/Javascript_Utilities#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
+}
