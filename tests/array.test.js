@@ -5,13 +5,13 @@ var array = require('../lib/array.js');
 describe('array.js', function() {
   describe('flattenArray()', function() {
     it('should return empty array if provided arrays are empty', function() {
-      assert.equal(array.flattenArray([[],[]]), []);
+      let tab = array.flattenArray([[],[]]);
+      assert.ok(tab.length==0 && tab instanceof Array == true);
     });
 
     it('should return a flat array if provided with 2D arrays', function(){
-        let tab = array.flattenArray([1,2],[3,4]);
-        assert.equal(tab, [1,2,3,4]);
-        assert.equal(tab.length, 4);
+        let tab = array.flattenArray([[1,2],[3,4]]);
+        assert.deepStrictEqual(tab, [1,2,3,4]);
     })
   });
 
