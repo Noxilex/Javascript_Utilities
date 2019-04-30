@@ -1,5 +1,5 @@
 /**
- * 2D coordinate
+ * 2D coordinate class
  */
 class Point {
   constructor(x, y){
@@ -10,8 +10,8 @@ class Point {
 
 /**
  * Returns mouse position based on canvas & mouse event
- * @param {*} canvas 
- * @param {*} e 
+ * @param {Canvas} canvas 
+ * @param {Event} e 
  */
 function getMousePos(canvas, e) {
     let rect = canvas.getBoundingClientRect();
@@ -22,8 +22,10 @@ function getMousePos(canvas, e) {
 
 /**
  * Returns true if item is contained in the array
- * @param {*} array 
- * @param {*} item 
+ * item needs to implements the equals() methods in order
+ * for the function to work properly
+ * @param {Array} array 
+ * @param {Object} item 
  */
 function contains(array, item){
     for(var i = 0; i < array.length; i++){
@@ -51,7 +53,7 @@ function copyOfArray(array){
 /**
  * Turns a 2D array into a 1D array
  * ex: flattenArray([[1,2],[3,4]]) -> [1,2,3,4]
- * @param {*} array 
+ * @param {Array} array 
  */
 function flattenArray(array){
     return array.reduce((acc, item, index) => {
