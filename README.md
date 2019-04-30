@@ -16,3 +16,13 @@ As a fervent user of Javascript, I keep making new project which all share simil
 I've now created a dedicated repository to store all of those useful functions & improve them over time.
 
 I hope you can learn a few things along the way & maybe you can teach me some neat tricks you've discovered.
+
+## Test
+
+Test are run using Mocha. 
+
+```bash
+git clone https://github.com/Noxilex/Javascript_Utilities.git
+npm install
+npm test
+```

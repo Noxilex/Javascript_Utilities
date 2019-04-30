@@ -1,4 +1,4 @@
-var assert = require('assert');
+var assert = require('chai').assert;
 var array = require('../lib/array.js');
 
 
