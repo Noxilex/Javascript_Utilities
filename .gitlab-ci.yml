@@ -1,16 +1,13 @@
 image: node:10.15.3-jessie
 
 stages:
-
-  - ver
-
-  - init
-
+  
   - tests
 
-ver:
 
-  stage: ver
+run_tests:
+
+  stage: tests
 
   script:
 
@@ -18,21 +15,9 @@ ver:
 
     - whoami
 
-init:
-
-  stage: init
-
-  script:
-
     - rm -rf node-modules
 
     - npm install
-
-run_tests:
-
-  stage: tests
-
-  script:
 
     - npm test
 
