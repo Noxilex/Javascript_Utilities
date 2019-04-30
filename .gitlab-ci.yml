@@ -1,5 +1,3 @@
-image: node:v12.1.0
-
 stages:
 
   - ver
