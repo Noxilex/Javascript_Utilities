@@ -44,6 +44,8 @@ function randomColor(){
 }
 
 /**
+ * Copies the array & makes a clone of itself 
+ * (doesn't share the same reference as original array)
  * @param {Array} array 
  */
 function copyOfArray(array){
