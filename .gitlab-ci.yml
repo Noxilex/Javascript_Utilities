@@ -24,8 +24,6 @@ init:
 
   script:
 
-    - npm cache clean
-
     - rm -rf node-modules
 
     - npm install
