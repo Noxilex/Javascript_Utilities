@@ -19,7 +19,7 @@ I hope you can learn a few things along the way & maybe you can teach me some ne
 
 ## Test
 
-Test are run using Mocha. 
+Test are run using Mocha & Chai.
 
 ```bash
 git clone https://github.com/Noxilex/Javascript_Utilities.git
